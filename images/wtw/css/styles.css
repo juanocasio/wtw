@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+#maincol {
+	background-image:url(../images/balloons.gif);
+	background-repeat:repeat-y;
+}
