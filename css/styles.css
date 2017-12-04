@@ -32,7 +32,7 @@ html {
 /*---------------------------------------------*/
 header {
   position: relative;
-  background-image: linear-gradient(to top, rgba(200,200,200,.2),white), url(img/hero.png);
+  background-image: linear-gradient(to top, rgba(230,230,230,.2),rgba(230,230,230,0)), url(img/hero.png);
   background-size: cover;
 
   background-position: center;
@@ -97,7 +97,7 @@ header {
 .intro {
   background: #fff;
   padding: 50px 0;
-  color:#ab0000;
+  
 }
 
 .container {
@@ -107,17 +107,57 @@ header {
   text-align: center;
 }
 
-h1 {
+h1,h2 {
+  font-weight: 300;
+  color:#ab0000;
+  letter-spacing: 1px;
+
+}
+h1{
   font-size: 1.5rem;
+  word-spacing: 4px;
 }
 
+h2 {
+  font-size: 1.25rem;
+  word-spacing: 2px;
+}
+.section-heading{
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-/* TIMELINE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section-heading:after{
+display: block;
+height: 2px;
+background-color: #ab0000;
+content: " ";
+width: 100px;
+margin: 0 auto;
+margin-top: 30px;
+}
+
+.long-copy {
+  line-height: 120%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.img-box {
+  width: 60%;
+}
+.img-item{
+  width: 100%;
+}
+
+/*---------------------------------------------*/
+/*             TIMELINE SECTION                */
+/*---------------------------------------------*/
 
 .timeline ul {
-  background: #456990; /*#456990;*/
-  padding: 50px 0;
+  background: #fff; /*#456990;*/
+  padding: 20px 0;
 }
 
 .timeline ul li {
@@ -125,8 +165,9 @@ h1 {
   position: relative;
   width: 6px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 20px;
   background: #ab0000;
+  color: #fff;
 }
 
 .timeline ul li::after {
@@ -146,7 +187,7 @@ h1 {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #fff;
+  background: #ab0000;
 }
 
 .timeline ul li div::before {
@@ -165,7 +206,7 @@ h1 {
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #fff transparent transparent;
+  border-color: transparent #ab0000 transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -175,7 +216,7 @@ h1 {
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #fff;
+  border-color: transparent transparent transparent #ab0000;
 }
 
 time {
@@ -247,6 +288,6 @@ time {
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #F45B69 transparent transparent;
+    border-color: transparent #ab0000 transparent transparent;
   }
 }
