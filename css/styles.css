@@ -22,6 +22,38 @@ html {
 /*         REUSABLE COMPONENTS SECTION         */
 /*---------------------------------------------*/
 
+blockquote.style1 {
+  font-size: 120%;
+  padding: 20px;
+
+  margin-top: 70px;
+  background-image: url(img/openquote1.gif);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 23px;
+  }
+  blockquote.style1 span.quote {
+     display: block;
+     background-image: url(img/closequote1.gif);
+     background-repeat: no-repeat;
+     background-position: bottom right;
+   }
+
+   .caption{
+     font-size: 75%;
+   }
+.yellow{
+  background-color: #faebbc;
+  border-top: 1px solid #e1cc89;
+  border-bottom: 1px solid #e1cc89;
+}
+
+.red{
+  background-color: #ffaaaa;
+  border-top: 1px solid #d46a6a;
+  border-bottom: 1px solid #d46a6a;
+}
+
 .row{
   max-width: 1140px;
   margin: 0 auto;
@@ -41,11 +73,13 @@ header {
 .hero-text-box {
   position: absolute;
   text-align: center;
-  top: 80%;
+  top: 75%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 90%;
   width: 1140px;
+  line-height: 140%;
+  font-weight: 400;
 }
 
 .logo {
@@ -55,6 +89,7 @@ header {
   margin-top: 20px;
 }
 
+/*main nav*/
 .main-nav {
   margin-top: 25px;
   float: right;
@@ -73,6 +108,7 @@ header {
   text-transform: uppercase;
   font-size: 70%;
   border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.25s;
   transition: border-bottom 0.25s;
   padding: 4px 0;
 }
@@ -82,12 +118,24 @@ header {
   border-bottom: 2px solid #ab0000;
 }
 
+.bot-link:link,
+.bot-link:visited {
+  color: #ab0000;
+  text-decoration: none;
+}
+
+
 .italic {
   font-style: italic;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.photos,
+.contact {
+  padding: 50px 0;
 }
 
 /*---------------------------------------------*/
@@ -144,11 +192,27 @@ margin-top: 30px;
   margin-left: 15%;
 }
 
+.long-copy-contact {
+  line-height: 120%;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 20px;
+}
+
 .img-box {
   width: 60%;
 }
 .img-item{
   width: 100%;
+}
+
+footer {
+  padding: 25px 0;
+  background-color: #ab0000;
+  color: #fff;
+  text-align: center;
+  font-size: 70%;
+
 }
 
 /*---------------------------------------------*/
